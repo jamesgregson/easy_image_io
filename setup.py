@@ -26,6 +26,8 @@ if find('png.h', config.png_include_dir ) != '':
     libraries.append( 'png' )
     library_dirs.append( config.png_library_dir )
 
+for lib in config.libs:
+    libraries.append( lib )
 
 easy_image_io = Extension('easy_image_io',
                     define_macros=defines,
