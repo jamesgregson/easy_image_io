@@ -11,7 +11,7 @@ def find(name, path):
 
 defines      = [ ('MAJOR_VERSION',0),('MINOR_VERSION',1) ]
 include_dirs = [ numpy.get_include() ]
-libraries    = []
+libraries    = config.libs
 library_dirs = []
 
 if find('tiffio.h', config.tiff_include_dir) != '':
