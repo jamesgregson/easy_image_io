@@ -37,7 +37,7 @@ $ activate test # or 'source activate test'
 (test) $
 ```
 
-Clone the ```easy_image_io``` repository (or download and extract .zip). Open a terminal window and navigate to the ```<extraction_path>/easy_image_io/conda``` directory and run ```conda build .```, then
+Clone the ```easy_image_io``` repository (or download and extract .zip). Open a terminal window and navigate to the ```<extraction_path>/easy_image_io/conda``` directory and run ```conda build .```, then ```conda install --use-local easy_image_io```.
 
 E.g.
 
