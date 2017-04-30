@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import easy_image_io as eiio
 
 # return an image stored as planes (default for easy_image_io) as packed pixels
