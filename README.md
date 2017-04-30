@@ -13,40 +13,35 @@ This code was born out of the following issues:
 
 ## Requirements
 
-- setuptools
-- pip
-- numpy
-- ImageMagick
-- libpng, optional, but recommended
-- libtiff, optional, but recommended
-
-## Known Issues
-
-- On OS-X 10.12, using CImg without libpng results in PNG images with small pixel values being saved multiplied by a factor of 16. A workaround is to use the TIFF format, or to enable libpng
+- [Anaconda for Python3](https://www.continuum.io/downloads)
+- [ImageMagick](https://www.imagemagick.org/script/index.php)
+- [Git](https://git-scm.com/) - Optional
 
 ## Installation
 
+Install Anaconda3 and create a Python3 environment and activate it (skip if you've done this already)
+
 ```
+$ conda create -n test python=3.5
+$ activate test # or 'source activate test'
+```
+
+Clone the ```easy_image_io``` repository (or download and extract .zip). Open a terminal window and navigate to the ```<extraction_path>/easy_image_io/conda``` directory and run ```conda build .```, then
+
+E.g.
+
+```
+$ git clone https://github.com/jamesgregson/easy_image_io
+$ cd easy_image_io/conda
 $ conda build .
 $ conda install --use-local easy_image_io
-```
-
-*outdated*
-
-Only tested on OS-X (soon Ubuntu) but likely to be relatively straightforward on other platforms. Download the source code and extract. In the top level directory, edit the paths to libpng and libtiff (if desired).
-
-Open a terminal in the source code directory.  
-
-```
-$ python setup.py bdist_wheel
-$ pip install dist/easy_image_io*.whl
 ```
 
 Try out the code by running ```example.py```, which serves as the main example and self-check. It should create RGB and LUM images in both TIFF and PNG formats, then read these back in and ensure that the loaded images match the original data.
 
 ## Basic Usage
 
-See ```example.py``` for exmaple and self-check.
+See ```example.py``` for example and self-check.
 
 There are only two functions:
 
