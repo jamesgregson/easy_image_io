@@ -26,6 +26,13 @@ This code was born out of the following issues:
 
 ## Installation
 
+```
+$ conda build .
+$ conda install --use-local easy_image_io
+```
+
+*outdated*
+
 Only tested on OS-X (soon Ubuntu) but likely to be relatively straightforward on other platforms. Download the source code and extract. In the top level directory, edit the paths to libpng and libtiff (if desired).
 
 Open a terminal in the source code directory.  
