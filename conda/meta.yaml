@@ -20,6 +20,8 @@ requirements:
     - libtiff
   run:
     - numpy
+    - libpng
+    - libtiff
 
 build:
   number: 1
